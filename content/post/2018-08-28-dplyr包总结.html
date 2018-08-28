@@ -1,13 +1,44 @@
 ---
-title: dplyr包总结
-author: Yang
-date: '2018-08-28'
-slug: dplyr包总结
-categories:
-  - R
-tags: []
+title: "dplyr包总结"
+author: "yang"
+date: "2018年8月28日"
+output: html_document
 ---
 
 
 
-
+<div class="section level3">
+<h3>简述</h3>
+<ul>
+<li>dplyr包是什么</li>
+<li>当你遇到什么问题的时候，你可以使用dplyr包</li>
+</ul>
+</div>
+<div class="section level3">
+<h3>函数列表</h3>
+<ol style="list-style-type: decimal">
+<li>核心函数——select(选列) mutate（新变量） arrange（排序） filter（选行） summarise（汇总）</li>
+<li>管道函数—— %&gt;% %&gt;&gt;% 增加了可读性</li>
+<li>汇总函数——group_by（添加分组信息，对数据集定义群组）（做一个函数查询列表）</li>
+<li>组装函数——union、bind_row 变形连接(left)和过滤连接(semi)bind_cols（做一个函数查询列表）</li>
+</ol>
+<div class="section level4">
+<h4>实际案例</h4>
+<ol style="list-style-type: decimal">
+<li>根据条件提取行 filter_frac_n_n_join_join</li>
+<li>根据条件提取列 select_all_at_column</li>
+<li>Vlookup功能的 left_join_join</li>
+<li>group_by + summarise + 自定义函数</li>
+<li>两个数据集的合并bind_cols_join_join_rows</li>
+<li>case_when 函数</li>
+<li>if_else 函数</li>
+</ol>
+</div>
+</div>
+<div class="section level3">
+<h3>参考资料</h3>
+<ul>
+<li>官方教程</li>
+<li>cheatsheet</li>
+</ul>
+</div>

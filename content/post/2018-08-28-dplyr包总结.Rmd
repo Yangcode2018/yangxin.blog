@@ -1,9 +1,32 @@
 ---
-title: dplyr包总结
-author: Yang
-date: '2018-08-28'
-slug: dplyr包总结
-categories:
-  - R
-tags: []
+title: "dplyr包总结"
+author: "yang"
+date: "2018年8月28日"
+output: html_document
 ---
+
+###简述
+
+* dplyr包是什么
+* 当你遇到什么问题的时候，你可以使用dplyr包
+
+### 函数列表
+1. 核心函数——select(选列)  mutate（新变量） arrange（排序） filter（选行） summarise（汇总）
+2. 管道函数—— %>% %>>% 增加了可读性
+3. 汇总函数——group_by（添加分组信息，对数据集定义群组）（做一个函数查询列表）
+4. 组装函数——union\intersect\setdiff、bind_row 变形连接(left\right\inner\full)和过滤连接(semi\anti)bind_cols（做一个函数查询列表）
+
+#### 实际案例
+
+1. 根据条件提取行 filter\distinct\sample_frac\sample_n\slice\top_n\anti_join\semi_join
+2. 根据条件提取列 select\pull\mutate\transmute\mutate\mutate_all\mutate_at\add_column\rename
+3. Vlookup功能的 left_join\right_join
+4. group_by + summarise + 自定义函数
+5. 两个数据集的合并bind_cols\inner_join\full_join\by\bind_rows\intersect\setdiff\union
+6. case_when 函数
+7. if_else 函数
+
+### 参考资料
+* 官方教程
+* cheatsheet
+
